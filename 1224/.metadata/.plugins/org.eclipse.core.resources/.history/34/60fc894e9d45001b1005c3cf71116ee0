@@ -1,0 +1,48 @@
+package com.javaEdu.ex;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class StudentManageClass {
+	
+	public void manageName (StudentClass s, String name) {
+		s.setName(name);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ArrayList<StudentClass> student = new ArrayList<StudentClass>();
+		
+//		Scanner scanner = new Scanner(System.in);
+//		int input = scanner.nextInt();
+		
+		
+		StudentClass st1 = new StudentClass("양준호", 26, "123");
+		StudentClass st2 = new StudentClass("주커버그", 36, "124");
+		StudentClass st3 = new StudentClass("빌게이츠", 56, "125");
+		
+		st1.setSubject("OS");
+		st2.setSubject("네트워크");
+		st3.setSubject("자구");
+		
+		for(StudentClass s : student) {
+			System.out.println(s.getName() + ", " + s.getAge() + ", "
+					+ s.getNum() + ", " + s.getSubject());
+		}
+		
+		System.out.println("test");
+		
+		student.add(st1);
+		student.add(st2);
+		student.add(st3);
+		
+		StudentManageClass manager = new StudentManageClass();
+		
+		manager.manageName(st1, "리누스 토발즈");
+		
+		for(StudentClass s : student) {
+			System.out.println(s.getName() + ", " + s.getAge() + ", "
+					+ s.getNum() + ", " + s.getSubject());
+		}
+	}
+}
