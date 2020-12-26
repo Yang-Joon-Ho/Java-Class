@@ -1,8 +1,0 @@
-package com.javaEdu.ex;
-
-public class ChildClass extends ParentClass{
-	String str = "아들";
-	public ChildClass() {
-		
-	}
-}
