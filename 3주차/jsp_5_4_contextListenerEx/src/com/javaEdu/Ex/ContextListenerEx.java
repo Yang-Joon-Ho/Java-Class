@@ -9,7 +9,7 @@ import javax.servlet.annotation.WebListener;
 public class ContextListenerEx implements ServletContextListener{
 	
 	public ContextListenerEx() {
-		
+		super();
 	}
 	
 	@Override

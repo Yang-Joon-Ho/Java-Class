@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/HelloWorldInitParam")
 public class HelloWorldInitParam extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+    
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -21,7 +21,7 @@ public class HelloWorldInitParam extends HttpServlet {
         super();
         // TODO Auto-generated constructor stub
     }
-
+    
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
@@ -37,5 +37,4 @@ public class HelloWorldInitParam extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
 }

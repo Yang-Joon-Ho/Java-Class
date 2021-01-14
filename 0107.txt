@@ -1,0 +1,65 @@
+다음주 토요일까지 개발스케줄 만들어서 제출해야함.
+
+산출물은 만들고 싶으면 만들어라 안해도 됨.
+
+HTTP 안에 TCP가 들어가있다. UDP는 안들가있고,
+
+REST는 HTTP를 기반으로 함.
+
+Json 형식으로 가져옴
+
+URL과 URI의 차이점 
+
+sendRedirect
+
+MIME
+
+forward 는 sendRedirect와 비슷
+
+Bean = DTO DB에 접근하는 객체
+
+jsp:setProperty name = "양준호"
+property = "어쩌구"
+(jsp판 setter임)
+
+Client에서 서로 주고받는 경우는 request
+서버에서 클라이언트로 주는건 response
+
+forward와 include 다 배움
+---------------------------
+9장 쿠키 세션
+
+쿠키 관련 정보는 톰캣서버의 context.xml에 존재.
+그리고 이걸 response로 클라이언트에 전송함
+
+---------------------------
+10장
+exception page & java Bean
+
+exception page는 404오류 페이지 나오는것을 방지하기 위한 것
+
+Bean = 클래스 
+DB에서 가져온걸 객체화 시키기위해 사용
+
+프로젝트 개발할 때, 클래스 다이어그램 & ERP 필요
+
+클래스가 n개이므로 빈'즈'이다.
+
+DB테이블의 값이 클래스의 멤버 변수에 저장되도록 하는게 DTO
+
+DB테이블의 구조와 일치하는 클래스가 존재해야 데이터를 넣든지 뺴든지 할수가잇다
+
+클래스 설계 잘하는게 제일 중요하다. 이거 진짜 잘해야 할듯.
+
+------------------------------------
+
+오라클 DB Listener 포트 번호 : 1521
+
+tiger = 비밀번호
+
+commit : 메모리에 올라와있는 데이터를 file system 즉 하드디스크로 저장한다는
+얘기
+
+JDBC는 오라클, mysql등등을 동일하게 사용하기 위해 컨버젼해주는 것. 
+
+오라클 테이블 아이디 - 비번 : scott - tiger
