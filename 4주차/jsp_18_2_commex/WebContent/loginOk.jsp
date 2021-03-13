@@ -40,7 +40,7 @@
 			session.setAttribute("id", id);
 			session.setAttribute("name", name);
 			session.setAttribute("validMem", "yes");
-			response.sendRedirect("main.jsp");
+			response.sendRedirect("membersAll.do");
 		}
 	}
 %>

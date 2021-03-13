@@ -1,20 +1,24 @@
-package com.javaEdu.ex.command;
+package DeptorsListCommand;
 
 import java.util.ArrayList;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.javaEdu.ex.dao.BDao;
-import com.javaEdu.ex.dto.BDto;
+import com.Command.Command;
+import com.Users.UserDao;
+import com.Users.UserDto;
 
-public class BListCommand implements BCommand{
+public class DeptorsListCommand implements Command {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
-		BDao dao = new BDao();
-		ArrayList<BDto> dtos = dao.list();
+		
+		UserDao dao = UserDao.getInstance();
+		
+		ArrayList<UserDto> dtos = dao.list();
 		request.setAttribute("list", dtos);
 	}
+
 }

@@ -15,7 +15,7 @@
 	MemberDao dao = MemberDao.getInstance();
 	if(dao.confirmId(dto.getId()) == MemberDao.MEMBER_EXISTENT) {
 %>
-
+	
 	<script>
 		alert('아이디가 이미 존재');
 		history.back(); <%-- 브라우저를 한번 back 함. --%>
